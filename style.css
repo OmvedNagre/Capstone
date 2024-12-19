@@ -1,0 +1,260 @@
+body {
+    margin: 40px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x:hidden;
+    font-family: "Roboto Mono", serif;
+    font-weight: 400;
+}
+
+  /* Navigation bar */
+.header {
+    margin: 20px 10vw;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 49px;
+    justify-content: space-between;
+    background: rgba(51, 51, 51, 0.08);
+    padding: 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 100px;
+}
+
+.logo , .logo a{
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    color: black;
+    flex: auto;
+    text-align: center;
+    margin-right: 4rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+    
+}
+
+.nav-left, .nav-right , .nav-center {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav-left li, .nav-right li, .nav-center li {
+    margin: 0;
+    justify-items: center;
+}
+  
+.nav-left a, .nav-right a {
+    text-decoration: none;
+    font-weight: normal;
+ 
+    color: black;
+    font-family: "Roboto Mono";
+}
+  
+.nav-left {
+    margin-right:auto;
+}
+  
+.nav-right {
+    margin-left: auto;
+}
+
+.nav-center a{
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    color: black;
+    flex: auto;
+    text-align: center;
+    margin-right: 4rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+}
+
+@media (max-width: 749px) {
+    .nav-left{
+       font-size: 10px;
+       gap: 10px;
+       display: flex;
+       flex-direction: column;
+    }
+    .nav-center a{
+       font-size: 1.2rem;
+       margin-right: 0.5rem;
+    }
+    .nav-right{
+       font-size: 10px;
+    }
+}
+
+
+/* Center image and etc*/
+.title {
+    margin-top: 55px;
+    margin-bottom: 20px;
+    font-size: 70px;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-weight: bold;
+}
+
+/* Center Image */
+
+.cetner-img {
+    text-align: center;
+}
+
+.center-img img {
+    margin-top: 0px;
+    width: 70%;
+    max-height: 85vh;
+    object-fit: cover;
+}
+
+.center-img p {
+    text-align: center;
+    margin: 20px auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 160%;
+    padding: 9vw 18vw;
+    text-transform: uppercase;
+}
+
+
+/* Grid part */
+.grid-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+  
+.grid-images img {
+    width: 99%;
+    height: auto;
+}
+.grid-images{
+    font-size: 10px;
+}
+.grid-images h3{
+    font-weight: 400;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 1.2em;
+}
+  
+.grid-images p{
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+/* Comments */
+
+.testimonial-section h2{
+    font-weight: 400;
+    text-align: center;
+    font-size: 48px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+.testimonial-card {
+
+    background-color: white;
+    width: 250px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+  }
+.profile{
+    display: flex;
+    align-items: center;
+  }
+
+.profile-text { 
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  
+.testimonial-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+  }
+  
+.testimonial-text {
+    height: 30%;
+    text-align: left;
+    padding-left: 17%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border-left: 1.5px solid black;
+  }
+  
+  .client-name {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    display: block;
+    margin: 0;
+  }
+  
+  .client-title {
+    font-size: 14px;
+    text-align: left;
+    font-size: smaller;
+    display: block;
+    margin: 0;
+  }
+
+
+/* Contact Me */
+
+.footer{
+    margin-top:50px ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer h2{
+    font-family: "Bebas Neue", serif;
+    font-size: 27px;
+    font-weight: 400;
+}
+.footer button{
+    font-family: "Roboto Mono", serif;
+    background-color: white;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 15px;
+    height: 40px;
+    width: 140px;
+    border: 1px solid black;
+  }
+
+/* *{
+    outline: 1px solid red;
+} */
